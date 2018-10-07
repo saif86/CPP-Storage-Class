@@ -103,14 +103,12 @@ int main() {
 ### Output
 ```
 1
-
 2
 ```
 In the above program, test( ) function is invoked 3 times. During first call, variable *var* is declared as static variable and initialized to 0. Then 1 is added to *var* which is displayed in the screen. When the function test( ) returns, variable *var* still exist because it is a static variable. During second function call, no new variable *var* is created. Only *var* is increased by 1 and then displayed to the screen.
 ### Output of above program if var was not specified as static variable 1 1
 ```
 1
-
 1
 ```
 ## Register Variable

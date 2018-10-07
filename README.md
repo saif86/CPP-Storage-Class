@@ -44,6 +44,8 @@ If a variable is defined outside any function, then that variable is called a gl
   
   #include <iostream> 
   using namespace std; 
+  
+  // Defining and Initializing Global variable
   int c = 12; 
   
   void test(); 
@@ -52,6 +54,7 @@ If a variable is defined outside any function, then that variable is called a gl
     ++c; 
     cout<<c<<endl; //Output: 13 
     test(); 
+    
     system("pause"); 
     return 0;
  }

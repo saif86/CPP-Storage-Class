@@ -61,6 +61,12 @@ If a variable is defined outside any function, then that variable is called a gl
   cout<<c<<endl; //Output: 14 
 }
 ```
+### Output
+```
+13
+
+14
+```
 In the above program, *c* is a global variable. This variable is visible to both functions in the above program.
 The memory for global variable is set when program starts and exist until program ends.
 

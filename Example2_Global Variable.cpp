@@ -1,24 +1,47 @@
-/* In this example, global variable can be accessed by all functions because
-it is defined at the top of the listing.*/
+/**
+* @file Example2_Global_Variable.cpp
+*
+* @brief C++ Program to demonstrate Global Variables. 
+* In this example, global variable can be accessed by all functions because
+* it is defined at the top of the listing.
+*
+* @author Saif Ullah Ijaz
+*
+*/
 
 #include <iostream> 
 using namespace std;
 
 // Defining and Initializing Global variable
-int c = 12;
+int gVar = 12;
 
+// FUNCTION PROTOTYPE (DECLARATION)
+
+/** function that tests global variables.
+*
+* @param void.
+*
+* @return void.
+*/
 void test();
 
+
+// function main begins program execution
 int main() {
-	++c;
-	cout << c << endl; //Output: 13 
+	++gVar;
+	cout << gVar << endl; //Output: 13 
 	test();
 
 	system("pause");
 	return 0;
 }
+// end main 
 
+// FUNCTION DEFINITION
+
+// function that tests global variables.
 void test() {
-	++c;
-	cout << c << endl; //Output: 14 
+	++gVar;
+	cout << gVar << endl; //Output: 14 
 }
+// end function test
